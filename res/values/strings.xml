@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">BrainTest</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="title_activity_exit">ExitActivity</string>
+</resources>

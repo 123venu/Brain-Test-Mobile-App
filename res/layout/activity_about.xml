@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_about"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.venu.braintest.AboutActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:gravity="center"
+                android:text="How To Play"
+                android:textColor="#1E88E5"
+                android:textSize="27dp" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="~ KEY POINTS ~"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="Clicking on ‘New Game’ you are presented with four levels of game difficulty, ‘Novice’, ‘Easy’, ‘Medium’ and ‘Guru’. Clicking on each level sets the maximum number of terms involved in the arithmetic expression that you need to calculate." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="The ‘Novice’ level corresponds to an arithmetic expression involving exactly two integers. ‘Easy’ level corresponds to an arithmetic expression with either two or three integer. The ‘Medium’ level corresponds to an arithmetic expression with either two or three or four integers. The ‘Guru’ level corresponds to an arithmetic expression with either four or five or six integers." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="After selecting the difficulty level you will be presented with the main game screen which contains a randomly generated arithmetic expression among integers, based on the difficulty level. The arithmetic expression includes random mixed operations utilizing addition, subtraction, multiplication and division." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="You will have to use the buttons on the game screen to type your answer. You can indicate that the full answer is completed by hitting the # button. You can also delete the digits typed by using the DEL key. " />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="Each level will contain 10 different arithmetic expressions. All answer should only integers and if the result in a non-integer, the result will be rounded to the closest integer number." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="Once you click on #, you will be notified whether the answer you entered in correct or wrong. To move to the next arithmetic expression you will have to press the # button again." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="~ HINTS and TIMER ~"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="You can switch on ‘Hints’ from the preference menu. If the hints option is ‘on’ you will be given 4 attempts per question. Each time you give an incorrect answer when the option is on, the application will display ‘Greater’ or ‘Less’ checking with the correct answer." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="You have 10 seconds for each question to give the correct answer. As soon as the counter reaches 0 secs the next arithmetic question will be presented. " />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="If the # button is pressed before the counter reaches zero, the counter stops and displays whether the answer is correct or incorrect and a subsequent press of # moves to the next question." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="In case the hints are on, a press of the # button before the counter reaches zero does not stop the counter if the answer is incorrect. The counter keeps running until it reaches 0, or the maximum number of attempts for each question is reached or until you give the correct answer to the question." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="~ MARKS ~"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="In the end of each game after 10 arithmetic expressions you will be displayed with a score which is the sum of the points you scored in each question. The score will take into account how fast you answered the question." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="Zero marks will be awarded for each incorrect answer. If you attempt to answer a question with 10 seconds remaining you will awarded 100 marks." />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:paddingTop="10dp"
+                android:text="~ SAVE ~"
+                android:textColor="#000" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="You have the option to save the current game on ‘Exit’ and continue another time. Pressing the ‘Continue’ button your previously started game will be resumed. " />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
